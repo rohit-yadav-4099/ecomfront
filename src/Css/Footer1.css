@@ -1,0 +1,57 @@
+.footerContainer {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 0;
+  color: white;
+  background-color: #197373;
+  position: absolute;
+  padding: 50px 0 30px;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer2ndDiv {
+  display: flex;
+  gap: 8em;
+}
+
+.navcontact {
+  margin-top: 40px;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.a {
+  color: white;
+  font-size: 15px;
+  line-height: 1%;
+}
+
+.navSocialmedia {
+  display: flex;
+  gap: 5px;
+  margin-top: 40px;
+}
+
+
+.navsicon {
+  height: 6vh;
+  width: 3vw;
+  background-color: #197373;
+  border-radius: 50%;
+}
+
+.degineby {
+  font-size: 15px;
+}
+
+.aboutuss {
+  font-size: 18px;
+  line-height: 1.5em;
+}

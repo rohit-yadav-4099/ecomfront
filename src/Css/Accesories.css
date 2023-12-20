@@ -1,0 +1,186 @@
+.image_sport_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+.all_images_sport{
+    height: 25vh;
+    width: 95%;
+    border-radius: 10px;
+ 
+}
+.underdiv_sport{
+    /* border-radius: 20px; */
+    /* display: flex; */
+    width: 40vh;
+    height: 45vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    /* border: 1px solid gray; */
+}
+.underdiv_sport:hover{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.566);
+    border-radius: 10px;
+
+}
+.topimage_sport{
+    width: 100%;
+    height: 22vh;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+}
+.btnaddcard_sport{
+    width: 9vw;
+    height: 5vh;
+    font-size: large;
+    background-color: #197373;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid yellow;
+}
+
+.headingproduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    font-weight: bold;
+    /* border: 2px solid black; */
+
+}
+.sport_container{
+    /* margin: auto; */
+    height: 30vh;
+    /* border: 2px solid black; */
+    display: flex;
+
+    justify-content:space-around;
+
+}
+
+.underdiv_two_sport{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* align-items: center; */
+    margin:auto;
+    width: 95%;
+    height: 80%;
+
+}
+
+.btnaddcard_sport:hover{
+    background-color: yellow;
+    color: black;
+    border: none;
+}
+.price_sport{
+     font-size: 1.5em;
+     font-weight: bold;
+}
+.underdiv_sport_two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    
+    .image_sport_container{
+       
+        gap: 20px;
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+        
+      
+    }
+    .all_images_sport{
+        height: 40vh;
+        width: 80vw;
+     
+    }
+    .underdiv_sport{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        border: 1px solid gray;
+    }
+   
+    .topimage_sport{
+        width: 100%;
+        height: 22vh;
+        border-radius: 20px;
+        /* border: 2px solid black; */
+    }
+    .btnaddcard_sport{
+        width: 55vw;
+        border-radius: 10px;
+        height: 6vh;
+        font-size: 1.5em;
+    }
+    
+
+    
+    
+}
+@media screen and (min-width:500px) and (max-width:1000px) {
+    
+    .image_sport_container{
+       
+        gap: 20px;
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+        
+      
+    }
+    .all_images_sport{
+        height: 60vh;
+        width: 80vw;
+     
+    }
+    .underdiv_sport{
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        border: 1px solid gray;
+    }
+   
+    .topimage_sport{
+        width: 100%;
+        height: 22vh;
+        border-radius: 20px;
+        /* border: 2px solid black; */
+    }
+    .btnaddcard_sport{
+        width: 55vw;
+        border-radius: 10px;
+        height: 6vh;
+        font-size: 3em;
+    }
+    
+
+    .price_sport{
+        font-size: 2em;
+        font-weight: bold;
+   } 
+  .titel_sport{
+    font-size: 3em;
+  } 
+    
+}
