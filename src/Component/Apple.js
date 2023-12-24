@@ -4,9 +4,6 @@ import { addtoCart } from "../Redux/Slice";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
-
-
-
 function PearCompo() {
   const [data, setData] = useState([]);
   const Navi = useNavigate();
@@ -22,14 +19,6 @@ function PearCompo() {
   });
   return (
     <>
-      {/* <div className="apple_container">
-        <img
-          src="https://www.jiomart.com/images/category/7470/apples-pears-20220802.jpeg"
-          alt="Not Found"
-          className="topimage_apple"
-        />
-      </div> */}
-
       <div className="image_apple_container">
         {data
           .filter((item) => item.subCategory === "iPhone")
@@ -61,7 +50,7 @@ function PearCompo() {
                         dispatch(addtoCart({ id, price, image, name }))
                       }
                     >
-                     add to cart
+                      add to cart
                     </button>
                   </NavLink>
                 </div>
