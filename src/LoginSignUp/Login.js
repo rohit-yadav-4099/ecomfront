@@ -32,7 +32,7 @@ function LoginButton() {
                 //   localStorage.setItem("name",res.data.name)
 
                 //   if(token){
-                navigate('/groceries')
+                navigate('/')
                 //   } else{
 
                 //     navigate('/login') 
@@ -47,7 +47,7 @@ function LoginButton() {
         })
     }
 
-   
+
 
     return (
         <div className="login">
@@ -68,7 +68,7 @@ function LoginButton() {
 
                     <button onClick={handle} className="loginbtn_main">Login</button><br />
 
-                    <NavLink to="/register"  className="gotoregister">go to register page</NavLink>
+                    <NavLink to="/register" className="gotoregister">go to register page</NavLink>
 
                 </form>
             </div>
