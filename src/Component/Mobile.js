@@ -25,19 +25,6 @@ function Mobile() {
     return (
         <>
 
-
-            {/* <div className="groceries_container">
-                {data.filter((item) => item.id === 1).map((item, index) => {
-
-                    return (
-                        <div key={index} className="underdiv_two">
-                            <img src={item.images} alt="Not found" className="groceriestop" />
-                        </div>
-                    )
-                })}
-            </div> */}
-
-
             <div className="image_groceries_container">
                 {data.filter((item) => item.category === "mobile").map((item, index) => {
                     const {
@@ -45,8 +32,6 @@ function Mobile() {
                         name = item.name,
                         image = item.image,
                         price = parseInt(item.price),
-                        title = item.title
-
                     } = item;
                     return (
                         <>
@@ -55,17 +40,21 @@ function Mobile() {
                                     <img src={item.image} alt="Not Found" className="all_images_groceries" /></NavLink>
 
                                 <div className="underdiv_groceries_two">
-                                    {/* <div className="headingproduct_groceries"><p >{item.title}</p>
-                                    </div> */}
-
-                                    <span>{item.title}
-                                        snjsk</span>
+                                    <span>{item.name}</span>
                                     <span className="price_groceries">₹:{item.price}.00</span>
-                                    {/* <h3>{item.title}</h3> */}
 
-                                    <NavLink to={`/addcard/${item.id}`}>
+                                    {/* <NavLink to={`/addcard/${item.id}`}>
                                         <button onClick={() => dispatch(addtoCart({ id, price, image, name, title }))} className="btnaddcard"> add to card</button>
-                                    </NavLink>
+
+                                    </NavLink> */}
+                                    <button
+                                        className="btnaddcard_home"
+                                        onClick={() =>
+                                            dispatch(addtoCart({ id, price, image, name }))
+                                        }
+                                    >
+                                        add to cart
+                                    </button>
                                 </div>
 
                             </div>
