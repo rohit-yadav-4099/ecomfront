@@ -9,6 +9,11 @@
   justify-content: center;
 }
 
+/* .rohit{
+  position: absolute;
+  display: inline;
+  flex-direction: row-reverse;
+} */
 .all_images_home {
   height: 30vh;
   width: 18vw;
