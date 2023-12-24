@@ -21,17 +21,10 @@ function PearCompo() {
     });
     return (
         <>
-            <div className="men_container">
-                <img
-                    src="https://www.jiomart.com/images/category/496/men-20200831.jpg"
-                    alt="Not Found"
-                    className="topimage_men"
-                />
-            </div>
 
             <div className="image_men_container">
                 {data
-                    .filter((item) => item.id >= 63 && item.id <= 65)
+                    .filter((item) => item.category === "Fashion")
                     .map((item, index) => {
                         const {
                             id = item.id,
