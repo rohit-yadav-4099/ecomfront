@@ -1,52 +1,58 @@
 .image_groceries_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
 
-    /* border: 2px solid black; */
-  }
-  .all_images_groceries {
-    height: 25vh;
-    width: 100%;
-    border-radius: 10px;
-  }
-  .underdiv_groceries {
-    /* border-radius: 20px; */
-    /* display: flex; */
-    width: 40vh;
-    height: 45vh;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    /* border: 1px solid gray; */
-  }
-  .underdiv_groceries:hover {
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.566);
-    border-radius: 10px;
-  }
-  .topimage_groceries {
-    width: 100%;
-    border-radius: 20px;
-  }
-  .btnaddcard {
-    width: 9vw;
-    height: 5vh;
-    font-size: large;
-    background-color: #197373;
-    color: white;
-    border-radius: 5px;
-    border: 2px solid yellow;
-  }
-  .btnaddcard:hover{
-    background-color: yellow;
+  /* border: 2px solid black; */
+}
+
+.all_images_groceries {
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.underdiv_groceries {
+  /* border-radius: 20px; */
+  /* display: flex; */
+  width: 40vh;
+  height: 45vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  /* border: 1px solid gray; */
+}
+
+.underdiv_groceries:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.566);
+  border-radius: 10px;
+}
+
+.topimage_groceries {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.btnaddcard {
+  width: 9vw;
+  height: 5vh;
+  font-size: large;
+  background-color: #197373;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+
+.btnaddcard:hover {
+  background-color: yellow;
   color: black;
   border: none;
-  }
-  
-  /* .headingproduct {
+}
+
+/* .headingproduct {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,11 +60,180 @@
     height: 40%;
     font-weight: bold;
   } */
-  /* .groceriestop {
+/* .groceriestop {
     width: 100%;
     height: 24vh;
     border-radius: 20px;
   } */
+.groceries_container {
+  /* margin: auto; */
+  height: 30vh;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.underdiv_two {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+  width: 95%;
+  height: 80%;
+}
+
+.footermain_groceries {
+  background-color: rgba(0, 0, 0, 0.742);
+  height: 35vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  top: 5vh;
+}
+
+.underdiv_groceries_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price_groceries {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.headingproduct_groceries {
+  font-weight: bold;
+}
+
+.logosdtl_groceries {
+  display: flex;
+  position: relative;
+  top: 0vh;
+  left: 15vw;
+  height: 8vh;
+}
+
+.gotonavdtl_groceries {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 25vw;
+  width: 40vh;
+  top: 2vh;
+  color: white;
+  font-size: 1em;
+}
+
+a {
+  color: aqua;
+  font-weight: bold;
+}
+
+.logoonedtl_groceries {
+  height: 5vh;
+  position: relative;
+  left: -0.4vw;
+  top: 1vh;
+}
+
+.logo_groceries {
+  height: 8vh;
+}
+
+.location_groceries {
+  position: absolute;
+  left: 4.5vw;
+  top: 4vh;
+}
+
+.locdtl_groceries {
+  font-weight: bold;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  color: whitesmoke;
+}
+
+.logoonephonedtl_groceries {
+  height: 4vh;
+  position: relative;
+  right: 41vw;
+  top: -2vh;
+  /* border: 5px solid black; */
+  color: aliceblue;
+  background-color: aqua;
+}
+
+.phodtl_groceries {
+  font-weight: bold;
+  position: absolute;
+  top: 13vh;
+  left: 10vw;
+
+  color: whitesmoke;
+}
+
+.logoonemaildtl_groceries {
+  height: 5vh;
+  position: relative;
+  right: 44vw;
+  top: 5vh;
+  color: red;
+}
+
+.emaildtl_groceries {
+  font-weight: bold;
+  position: absolute;
+  color: whitesmoke;
+  top: 20vh;
+  left: 10vw;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .image_groceries_container {
+    gap: 30px;
+  }
+
+  .all_images_groceries {
+    width: 90vw;
+  }
+
+  .underdiv_groceries {
+    width: 95vw;
+  }
+
+  .underdiv_groceries_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnaddcard {
+    width: 45vw;
+  }
+
+  .headingproduct_groceries {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    font-weight: bold;
+    /* border: 2px solid black; */
+  }
+
+  .groceriestop {
+    width: 100%;
+    height: 24vh;
+    border-radius: 20px;
+    /* margin: auto; */
+    /* margin-top: 10px; */
+  }
+
   .groceries_container {
     /* margin: auto; */
     height: 30vh;
@@ -66,7 +241,7 @@
     display: flex;
     justify-content: space-around;
   }
-  
+
   .underdiv_two {
     box-sizing: border-box;
     overflow: hidden;
@@ -74,170 +249,9 @@
     width: 95%;
     height: 80%;
   }
-  
-  .footermain_groceries {
-    background-color: rgba(0, 0, 0, 0.742);
-    height: 35vh;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    top: 5vh;
-  }
-  .underdiv_groceries_two {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .price_groceries {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .headingproduct_groceries {
-    font-weight: bold;
-  }
-  
-  .logosdtl_groceries {
-    display: flex;
-    position: relative;
-    top: 0vh;
-    left: 15vw;
-    height: 8vh;
-  }
-  
-  .gotonavdtl_groceries {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 25vw;
-    width: 40vh;
-    top: 2vh;
-    color: white;
-    font-size: 1em;
-  }
-  a {
-    color: aqua;
-    font-weight: bold;
-  }
-  
-  .logoonedtl_groceries {
-    height: 5vh;
-    position: relative;
-    left: -0.4vw;
-    top: 1vh;
-  }
-  
-  .logo_groceries {
-    height: 8vh;
-  }
-  
-  .location_groceries {
-    position: absolute;
-    left: 4.5vw;
-    top: 4vh;
-  }
-  
-  .locdtl_groceries {
-    font-weight: bold;
-    position: absolute;
-    top: 5vh;
-    left: 10vw;
-    color: whitesmoke;
-  }
-  
-  .logoonephonedtl_groceries {
-    height: 4vh;
-    position: relative;
-    right: 41vw;
-    top: -2vh;
-    /* border: 5px solid black; */
-    color: aliceblue;
-    background-color: aqua;
-  }
-  
-  .phodtl_groceries {
-    font-weight: bold;
-    position: absolute;
-    top: 13vh;
-    left: 10vw;
-  
-    color: whitesmoke;
-  }
-  
-  .logoonemaildtl_groceries {
-    height: 5vh;
-    position: relative;
-    right: 44vw;
-    top: 5vh;
-    color: red;
-  }
-  
-  .emaildtl_groceries {
-    font-weight: bold;
-    position: absolute;
-    color: whitesmoke;
-    top: 20vh;
-    left: 10vw;
-  }
-  @media screen and (min-width: 300px) and (max-width: 500px) {
-    .image_groceries_container {
-      gap: 30px;
-    }
-    .all_images_groceries {
-      width: 90vw;
-    }
-    .underdiv_groceries {
-      width: 95vw;
-    }
-  
-    .underdiv_groceries_two {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .btnaddcard {
-      width: 45vw;
-    }
-  
-    .headingproduct_groceries {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      width: 80%;
-      height: 40%;
-      font-weight: bold;
-      /* border: 2px solid black; */
-    }
-    .groceriestop {
-      width: 100%;
-      height: 24vh;
-      border-radius: 20px;
-      /* margin: auto; */
-      /* margin-top: 10px; */
-    }
-    .groceries_container {
-      /* margin: auto; */
-      height: 30vh;
-      /* border: 2px solid black; */
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    .underdiv_two {
-      box-sizing: border-box;
-      overflow: hidden;
-      margin: auto;
-      width: 95%;
-      height: 80%;
-    }
-  
-    .footermain_groceries {
-      /* height: 39vh; */
+
+  /* .footermain_groceries {
+      height: 39vh;
       top: 10vh;
     }
     .logosdtl_groceries{
@@ -267,118 +281,125 @@
       position: absolute;
       left: 5vw;
       top: 4vh;
-    }
-  
-    .locdtl_groceries{
+    } */
+
+  /* .locdtl_groceries{
       font-weight: bold;
       position: absolute;
       top: 5vh;
       left: 11vw;
       color: whitesmoke;
       font-size: 0.8em;
-    }
-  
-    .logoonephonedtl_groceries{
+    } */
+
+  /* .logoonephonedtl_groceries{
       height: 3vh;
       position: relative;
       right: 41vw;
       top: -2vh;
       color: aliceblue;
       background-color: aqua;
-    }
-  
-    .phodtl_groceries{
+    } */
+
+  /* .phodtl_groceries{
       font-weight: bold;
       position: absolute;
       top: 14vh;
       left: 11vw;
       font-size: 0.8em;
       color: whitesmoke;
-    }
-  
-    .logoonemaildtl_groceries{
+    } */
+
+  /* .logoonemaildtl_groceries{
       height: 3vh;
       position: relative;
       right: 49vw;
       top: 6vh;
-    }
-  
-    .emaildtl_groceries {
+    } */
+
+  /* .emaildtl_groceries {
       font-weight: bold;
       position: absolute;
       color: whitesmoke;
       top: 22vh;
       font-size: 0.5em;
       left: 11vw;
-    }
+    } */
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .image_groceries_container {
+    gap: 100px;
   }
-  
-  
-  @media screen and (min-width: 500px) and (max-width: 1000px) {
-    .image_groceries_container {
-      gap: 50px;
-    }
-    .all_images_groceries {
-      height: 60vh;
-      width: 90vw;
-    }
-    .underdiv_groceries {
-      width: 95vw;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .underdiv_groceries_two {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .btnaddcard {
-      width: 45vw;
-      height: 8vh;
-      font-size: 2em;
-      font-weight: bold;
-    }
-  
-    .headingproduct_groceries {
-      text-align: center;
-      font-size: 1.5em;
-      font-weight: bold;
-      /* border: 2px solid black; */
-    }
-    h3 {
-      font-size: 2em;
-    }
-    .groceriestop {
-      width: 100%;
-      height: 24vh;
-      border-radius: 20px;
-    }
-    .groceries_container {
-      height: 30vh;
-    }
-  
-    .underdiv_two {
-      box-sizing: border-box;
-      overflow: hidden;
-      margin: auto;
-      width: 95%;
-      height: 80%;
-    }
-  
-    .footermain_groceries {
+
+  .all_images_groceries {
+    height: 35vh;
+    width: 60vw;
+    margin-left: 10vh;
+  }
+
+  .underdiv_groceries {
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .underdiv_groceries_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnaddcard {
+    width: 40vw;
+    height: 8vh;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 15px;
+
+  }
+
+  .headingproduct_groceries {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .groceriestop {
+    width: 100%;
+    height: 24vh;
+    border-radius: 20px;
+  }
+
+  .groceries_container {
+    height: 30vh;
+  }
+
+  .underdiv_two {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto;
+    width: 95%;
+    height: 80%;
+  }
+
+  /* .footermain_groceries {
       top: 10vh;
-    }
-    .logosdtl_groceries{
+    } */
+  /* .logosdtl_groceries{
       flex-direction: column;
       position: relative;
       top: -12vh;
       left: 25vw;
       height: 8vh;
-    }
-  
-    .gotonavdtl_groceries{
+    } */
+
+  /* .gotonavdtl_groceries{
       display: flex;
       flex-direction: column;
       position: relative;
@@ -386,21 +407,21 @@
       width: 18vh;
       font-size: 1.7em;
       top: 2vh;
-    }
-  
-    .logoonedtl_groceries{
+    } */
+
+  /* .logoonedtl_groceries{
       height: 5vh;
       position: relative;
       left: -5vw;
       top: 1vh;
-    }
-  
-    .location_groceries{
+    } */
+
+  /* .location_groceries{
       position: absolute;
       left: 5vw;
       top: 4vh;
-    }
-  
+    } */
+  /*   
     .locdtl_groceries{
       font-weight: bold;
       position: absolute;
@@ -408,18 +429,18 @@
       top: 5.5vh;
       left: 11vw;
       color: whitesmoke;
-    }
-  
-    .logoonephonedtl_groceries {
+    } */
+
+  /* .logoonephonedtl_groceries {
       height: 4vh;
       position: relative;
       right: 37vw;
       top: -2vh;
       color: aliceblue;
       background-color: aqua;
-    }
-  
-    .phodtl_groceries{
+    } */
+
+  /* .phodtl_groceries{
       font-size: 1.5em;
       font-weight: bold;
       position: absolute;
@@ -427,15 +448,15 @@
       left: 11vw;
   
       color: whitesmoke;
-    }
-  
-    .logoonemaildtl_groceries{
+    } */
+
+  /* .logoonemaildtl_groceries{
       height: 5vh;
       position: relative;
       right: 43.5vw;
       top: 9vh;
-    }
-  
+    } */
+  /*   
     .emaildtl_groceries{
       font-weight: bold;
       position: absolute;
@@ -443,5 +464,5 @@
       font-size: 1em;
       top: 25vh;
       left: 11vw;
-    }
-  }
+    } */
+}
