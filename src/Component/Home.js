@@ -22,6 +22,7 @@ function HomeCompo() {
     });
     return (
         <>
+
             <div className="home_container">
                 {data
                     .filter((item) => item.id === 28)
@@ -88,6 +89,7 @@ function HomeCompo() {
                         const {
                             id = item.id,
                             name = item.name,
+                            rating = item.rating,
                             image = item.image,
                             price = parseInt(item.price),
                         } = item;
@@ -103,8 +105,9 @@ function HomeCompo() {
                                     </NavLink>
 
                                     <div className="underdiv_home_two">
+                                        <span>{item.name}</span>
                                         <span className="price_home">₹:{item.price}.00</span>
-                                        <NavLink to={`/addcard/${item.id}`}>
+                                        {/* <NavLink to={`/addcard/${item.id}`}>
                                             <button
                                                 className="btnaddcard_home"
                                                 onClick={() =>
@@ -114,19 +117,29 @@ function HomeCompo() {
                                                 add to cart
                                             </button>
                                             
-                                        </NavLink>
+                                        </NavLink> */}
+                                        <button
+                                            className="btnaddcard_home"
+                                            onClick={() =>
+                                                dispatch(addtoCart({ id, price, image, name, rating }))
+                                            }
+                                        >
+                                            add to cart
+                                        </button>
 
                                     </div>
+
                                 </div>
                             </>
                         );
                     })}
-                    
+
             </div>
 
-         {/* <Footer/> */}
-            
+
+
         </>
+
     );
 }
 export default HomeCompo;
