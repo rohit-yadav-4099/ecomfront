@@ -1,33 +1,32 @@
-
-.apple_container{
+.apple_container {
     height: 30vh;
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
-  
-    justify-content:space-around;
+
+    justify-content: space-around;
 
 }
 
-.topimage_apple{
+.topimage_apple {
     width: 95%;
-    height:25vh;
+    height: 25vh;
     border-radius: 20px;
     /* border: 2px solid black; */
 }
 
-.image_apple_container{
+.image_apple_container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
     /* border: 2px solid black; */
-  
+
 }
 
 
 
-.underdiv_apple{
+.underdiv_apple {
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -36,46 +35,48 @@
     gap: 20px;
     border: 1px solid gray;
 }
-.underdiv_apple:hover{
+
+.underdiv_apple:hover {
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.566);
 
 }
-.all_images_apple{
+
+.all_images_apple {
     height: 40vh;
     width: 28vw;
- 
+
 }
 
-.price_apple{
+.price_apple {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.btnaddcard_apple{
+.btnaddcard_apple {
     width: 15vw;
     border-radius: 20px;
     height: 7vh;
 }
 
-.goback{
-width:20vw;
-height: 8vh;
-border-radius:20px;
-position:relative;
-left:40%;
-top:5vh;
-background:#99ccff
-
+.goback {
+    width: 20vw;
+    height: 8vh;
+    border-radius: 20px;
+    position: relative;
+    left: 40%;
+    top: 5vh;
+    background: #99ccff
 }
+
 @media screen and (min-width:300px) and (max-width:500px) {
 
-    .all_images_apple{
+    .all_images_apple {
         height: 40vh;
         width: 80vw;
-     
+
     }
-    
-    .image_apple_container{
+
+    .image_apple_container {
         display: flex;
         flex-wrap: wrap;
         width: 95%;
@@ -83,10 +84,10 @@ background:#99ccff
         gap: 50px;
         justify-content: center;
         /* border: 2px solid black; */
-      
+
     }
 
-    .underdiv_apple{
+    .underdiv_apple {
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -95,21 +96,22 @@ background:#99ccff
         gap: 20px;
         border: 1px solid gray;
     }
-    
-    .headingproduct_apple{
+
+    .headingproduct_apple {
         /* border: 2px solid black; */
         text-align: center;
         width: 80vw;
         font-weight: bold;
     }
 
-.btnaddcard_apple{
-    width: 55vw;
-    border-radius: 20px;
-    height: 7vh;
-}
-.goback{
-    width:60vw;
-    left:20%;   
+    .btnaddcard_apple {
+        width: 55vw;
+        border-radius: 20px;
+        height: 7vh;
+    }
+
+    .goback {
+        width: 60vw;
+        left: 20%;
     }
 }
