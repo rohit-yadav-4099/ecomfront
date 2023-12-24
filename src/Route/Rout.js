@@ -1,9 +1,6 @@
 import { NavLink, Route, Routes, useNavigate } from "react-router-dom";
 import HomeCompo from "../Component/Home";
-// import GroceriesCompo from "../Component/Mobile";
 import FashionCompo from "../Component/Fashion";
-// import PremiumCompo from "../Component/Laptop";
-// import SportToyCompo from "../Component/Accesories";
 import "../Css/Rou.css";
 import MenCompo from "../Component/Men";
 import WomenCompo from "../Component/Women";
@@ -22,13 +19,13 @@ import Laptop from "../Component/Laptop";
 import Mobile from "../Component/Mobile";
 
 
+
+
 function RouteCompo() {
-    // const auth=localStorage.getItem("name")
+    // const searchNavigate = useNavigate();
+    // const [searchTerm, setsearchTerm] = useState("")
     const [count, setCount] = useState(false);
-
-    // const auth=localStorage.getItem("token")
     const Navi = useNavigate();
-
     const auth = localStorage.getItem("token");
     const countItem = useSelector((state) => state.Cart.cart);
     <span>{countItem.length}</span>;
@@ -56,24 +53,42 @@ function RouteCompo() {
         Navi("/register");
     };
 
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     searchNavigate(`/search/${searchTerm}`)
+    // }
+
     return (
         <>
             {/* <BrowserRouter> */}
 
             <div className="header_main">
-                {/* <img
-                    src="https://png.pngtree.com/png-vector/20190917/ourmid/pngtree-store-icon-in-line-style-png-image_1736161.jpg"
-                    height="60"
-                    alt="Not Found"
-                    className="imageicon"
-                /> */}
+                <div className="language">
+                    <select>
+                        <option>English</option>
+                        <option>English UK</option>
+                        <option>English US</option>
+                        <option>Hindi</option>
+                    </select>
+                </div>
+
                 <span className="shop_heading">iShop</span>
+                {/* <div
+                 className="search-bar">
+                    <input 
+                    onSubmit={handleSubmit}
+                    value={searchTerm}
+                    onChange={(e)=>setsearchTerm(e.target.value)}
+                    type="text" 
+                    placeholder="Search Product"
+                    />
+                </div> */}
 
                 <div>
-                    {/* <SearchBar /> */}
+
                     <NavLink to="/search" className="serch_icon">
                         <div className="cart-icon">
-                        <img src="./imagepng/search.jpg" alt="cart" ></img>
+                            <img src="./imagepng/search.jpg" alt="cart" ></img>
                         </div>
                     </NavLink>
                 </div>
@@ -94,7 +109,7 @@ function RouteCompo() {
                         </button>
                     </NavLink>
                 ) : (
-                    
+
                     <span>
                         <NavLink to="/login">
                             <button className="btnone loginbtn">signup</button>
@@ -109,8 +124,9 @@ function RouteCompo() {
             </div>
 
             <div className="routeparent">
+
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/" className="navlink">Home</NavLink>
                 </li>
 
                 <li>
@@ -122,10 +138,10 @@ function RouteCompo() {
                     {isMobiledata && (
                         <ul className="sub_groceries">
                             <li>
-                                <NavLink to="/mobile/tea">Samsung</NavLink>
+                                <NavLink to="/mobile/samsung">Samsung</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/mobile/coffee">iPhone</NavLink>
+                                <NavLink to="/mobile/iphone">iPhone</NavLink>
                             </li>
                         </ul>
                     )}
@@ -156,7 +172,7 @@ function RouteCompo() {
                     {isLaptopData && (
                         <ul className="sub_premium">
                             <li>
-                                <NavLink to="/laptop/pears">pears</NavLink>
+                                <NavLink to="/laptop/acer">Acer</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/laptop/apple">Apple</NavLink>
@@ -173,24 +189,18 @@ function RouteCompo() {
                     {isAccesoriesData && (
                         <ul className="sub_sport">
                             <li>
-                                <NavLink to="/sport/toy">Toy Figure</NavLink>
+                                <NavLink to="/accesories/airdops">Airdops</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/sport/babytoy">Baby Toys</NavLink>
+                                <NavLink to="/accesories/tv">TV</NavLink>
                             </li>
                         </ul>
                     )}
                 </li>
+
             </div>
 
-            {/* *********************************************loginand register******************************* */}
 
-            {/* <NavLink to="/" ><button className="btnone">Regiter</button></NavLink>
-        <NavLink to="/login"><button className="btnone">Login</button></NavLink> */}
-            {/*
-
-
-{/* *****************************************************************? */}
             <div className={count ? "hambergerlinksShows" : "hambergerlinksHide"}>
                 <ul className="navbar-listResponsive">
                     <li className="listres">
@@ -267,9 +277,10 @@ function RouteCompo() {
                         </NavLink>
                     </li>
                 </ul>
+
             </div>
 
-            {/* **************************************************************** */}
+
 
             <Routes>
                 <Route path="/" element={<HomeCompo />}></Route>
@@ -277,8 +288,6 @@ function RouteCompo() {
                     <Route path="/mobile" element={<Mobile />}>
                         {/* {" "} */}
                     </Route>
-                    {/* <Route path="groceries/tea" element={<TeaCompo />}></Route> */}
-                    {/* <Route path="groceries/coffee" element={<CoffeCompo />}></Route> */}
                     <Route path="/fashion" element={<FashionCompo />}>
                         {/* {" "} */}
                     </Route>
@@ -287,18 +296,13 @@ function RouteCompo() {
                     <Route path="/laptop" element={<Laptop />}>
                         {/* {" "} */}
                     </Route>
-                    {/* <Route path="premium/pears" element={<PearCompo />}></Route> */}
                     <Route path="laptop/apple" element={<AppleCompo />}></Route>
                     <Route path="/accesories" element={<Accesories />}>
                         {/* {" "} */}
                     </Route>
-                    {/* <Route path="sport/toy" element={<ToyCompo />}></Route> */}
-                    {/* <Route path="sport/babytoy" element={<BabyToyCompo />}></Route> */}
                     <Route path="/addcard/:id" element={<Cart />}></Route>
                     <Route path="/details/:id" element={<DetailsCompo />}></Route>
                     <Route path="/search" element={<SearchBar />}></Route>
-                    {/* <Route path="/success" element={<Success />}></Route>
-          <Route path="/cancel" element={<Cancel />}></Route> */}
                 </Route>
 
                 <Route path="/login" element={<LoginButton />}></Route>
@@ -306,8 +310,10 @@ function RouteCompo() {
                 <Route path="/logout" element={<LogOut />}></Route>
             </Routes>
 
+
             {/* </BrowserRouter> */}
-            {/* <Footer/> */}
+
+
         </>
     );
 }
