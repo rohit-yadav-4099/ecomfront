@@ -7,7 +7,7 @@ function Success() {
     <>
       <div className="sucesss">Payment Success</div>
       <div className="gobackpayment_div">
-      <button onClick={() => Navi("/groceries")} className="gobackpayment">go to home page</button>
+      <button onClick={() => Navi("/")} className="gobackpayment">go to home page</button>
       </div>
      
     </>
