@@ -45,7 +45,15 @@ function Accesories() {
                                 <div className="underdiv_sport_two">
                                     <span>{item.name}cxbdj</span>
                                     <span className="price_sport"> ₹:{item.price}.00</span>
-                                    <NavLink to={`/addcard/${item.id}`}>  <button className="btnaddcard_sport" onClick={() => dispatch(addtoCart({ id, price, image, name }))} >add to cart</button></NavLink>
+                                    {/* <NavLink to={`/addcard/${item.id}`}>  <button className="btnaddcard_sport" onClick={() => dispatch(addtoCart({ id, price, image, name }))} >add to cart</button></NavLink> */}
+                                    <button
+                                        className="btnaddcard_home"
+                                        onClick={() =>
+                                            dispatch(addtoCart({ id, price, image, name }))
+                                        }
+                                    >
+                                        add to cart
+                                    </button>
                                 </div>
 
 
