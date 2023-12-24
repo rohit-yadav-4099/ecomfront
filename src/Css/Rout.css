@@ -1,757 +1,427 @@
 .all_images_details {
-    height: 50vh;
-    width: 55vw;
-    border-radius: 20px;
+  height: 30vh;
+  width: 25vw;
+}
+
+.details_first_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.underdiv_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading_details {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.underdiv_two_details {
+
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+  width: 95%;
+  height: 80%;
+}
+
+.moredetails {
+  width: 30vw;
+  left: 28vw;
+  bottom: 30vh;
+}
+
+.btnaddcard_details {
+  width: 9vw;
+  height: 5vh;
+  font-size: large;
+  background-color: #197373;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid yellow;
+}
+
+.btnaddcard_details:hover {
+  background-color: yellow;
+  color: black;
+  border: none;
+}
+
+.details_wrrraper {
+  width: 50%;
+  min-height: 70vh;
+  gap: 20px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.detailsimage {
+  height: 40vh;
+}
+
+.dtlimage {
+  height: 30vh;
+  width: 32vw;
+  border-radius: 20px;
+}
+
+.detailpara {
+  width: 30vw;
+  font-weight: bold;
+  position: relative;
+  left: 1vw;
+  text-align: center;
+}
+
+.detailheading {
+  text-align: center;
+}
+
+.detailsthree {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+}
+
+.detailsimage {
+  border-radius: 20px;
+}
+
+.btngoback {
+  width: 30vw;
+  height: 10vh;
+}
+
+.innerman {
+  width: 20vw;
+
+  height: 10vh;
+}
+
+.men {
+  height: 8vh;
+  width: 4vw;
+  border-radius: 50%;
+  background-color: brown;
+  float: left;
+}
+
+.parent {
+  height: 15vh;
+  width: 80vw;
+  margin-top: 2vh;
+  position: relative;
+  left: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .details_wrrraper {
+    width: 95%;
+    min-height: 140vh;
+    margin-top: 20px;
   }
+
   .details_first_div {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
   }
+
   .underdiv_details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .price_details {
     font-size: 1.5em;
     font-weight: bold;
-    width: 30vw;
   }
+
+  .btnaddcard_details {
+    width: 55vw;
+    border-radius: 10px;
+    height: 8vh;
+  }
+
+  .title_details {
+    font-size: 2em;
+    text-align: center;
+  }
+
   .heading_details {
     font-size: 1em;
     font-weight: bold;
+    text-align: center;
+    left: 5vw;
+    top: 10vw;
   }
-  .underdiv_two_details {
-    /* border: 2px solid black; */
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: auto;
-    width: 95%;
-    height: 80%;
+
+  .all_images_details {
+    height: 45vh;
+    width: 90vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
   }
+
   .moredetails {
-    width: 30vw;
-    left: 28vw;
-    bottom: 30vh;
+    width: 90vw;
+    text-align: center;
   }
-  .btnaddcard_details {
-    width: 9vw;
-    height: 5vh;
-    font-size: large;
-    background-color: #197373;
-    color: white;
-    border-radius: 5px;
-    border: 2px solid yellow;
-  }
-  .btnaddcard_details:hover {
-    background-color: yellow;
-  color: black;
-  border: none;
-  }
-  .details_wrrraper {
-    width: 50%;
-    min-height: 70vh;
-    gap: 20px;
-    margin: auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
- 
-  .title_details {
-    font-size: 2em;
-  }
-  
+
   .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    margin-top: 20px;
+    width: 90vw;
+    position: relative;
+    left: 5vw;
   }
-  
+
   .detailsimage {
-    height: 40vh;
+    height: 55vh;
+    width: 40vw;
   }
-  /* .dtl {
-    border-radius: 20px;
-    background-image: linear-gradient(rgb(91, 224, 162), rgb(159, 158, 244));
-  } */
-  /* .dtl:hover {
-    box-shadow: 2px 2px 20px black;
-  } */
+
+  .dtl {
+    width: 99vw;
+  }
+
   .dtlimage {
-    height: 30vh;
-    width: 32vw;
+    height: 50vh;
+    width: 99vw;
     border-radius: 20px;
   }
+
   .detailpara {
-    width: 30vw;
+    width: 90vw;
     font-weight: bold;
     position: relative;
-    left: 1vw;
+    left: 4vw;
+    font-size: 1.5em;
+  }
+
+
+  .detailsparaone {
+    width: 85vw;
+    font-size: 1.5em;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .detaisheadingone {
+    font-size: 2em;
+  }
+
+  .btngoback {
+    position: relative;
+    left: 10vw;
+    top: 5vh;
+    height: 10vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 665px) and (max-width: 1000px) {
+  .details_wrrraper {
+    width: 95%;
+    min-height: 115vh;
+    margin-top: 20px;
+  }
+
+  .dtltwo {
+    width: 90vw;
+  }
+
+  .moredetails {
+    width: 70vw;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0px;
+  }
+
+  .title_details {
     text-align: center;
   }
-  .detailheading {
+
+  .main {
+    width: 99vw;
+  }
+
+  .btnaddcard_details {
+    width: 40vw;
+    border-radius: 15px;
+    height: 6vh;
+    font-size: 2em;
+  }
+
+  .heading_details {
+    font-size: 1.8em;
+    width: 70%;
+    font-weight: bold;
     text-align: center;
+    left: 5vw;
+    top: 10vw;
   }
-  
-  .detailsthree {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5vh;
+
+  .all_images_details {
+    height: 40vh;
+    width: 80vw;
+    margin-left: 2vw;
   }
-  
+
   .detailsimage {
+    height: 40vh;
+    width: 250vw;
+    position: relative;
+    top: 5vh;
+  }
+
+  .underdiv_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+  }
+
+  .dtl {
+    border-radius: 20px;
+    width: 90vw;
+    background-image: linear-gradient(rgb(91, 224, 162), rgb(159, 158, 244));
+  }
+
+  .dtlimage {
+    height: 50vh;
+    width: 90vw;
     border-radius: 20px;
   }
-  .btngoback {
-    width: 30vw;
-    height: 10vh;
+
+  .detailpara {
+    width: 88vw;
+    font-weight: bold;
+    position: relative;
+    font-size: 2em;
   }
+
+  .detailheading {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .detailsthree {
+    flex-direction: column;
+    width: 99vw;
+  }
+
+  .detailsimage {
+    border-radius: 20px;
+    width: 90vw;
+    height: 60vh;
+  }
+
   .btngoback:hover {
     background-color: blue;
   }
+
   .innerman {
-    width: 20vw;
-  
+    width: 60vw;
     height: 10vh;
   }
+
   .men {
     height: 8vh;
-    width: 4vw;
+    width: 12vw;
     border-radius: 50%;
     background-color: brown;
     float: left;
   }
+
   .parent {
-    height: 15vh;
-    width: 80vw;
-    margin-top: 2vh;
     position: relative;
-    left: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0vw;
+    width: 99vw;
   }
+
   .balam {
     font-weight: bold;
     position: relative;
-    left: 1vw;
+    left: 2vw;
+    font-size: 1.5em;
   }
+
   .read {
     position: relative;
     left: 1vw;
     top: -2vh;
   }
+
   .time {
     position: relative;
-    left: 1vw;
+    left: 2vw;
     top: -2vh;
+    font-size: 1.2em;
   }
+
   .logodtl {
-    height: 7vh;
-    width: 5vw;
+    height: 10vh;
+    width: 10vw;
   }
+
   .outerlogo {
-    /* border: 2px solid black; */
-    width: 30vw;
+    width: 55vw;
     height: 10vh;
     float: right;
   }
-  .footermain {
-    background-color: rgba(0, 0, 0, 0.742);
-    height: 35vh;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    top: 8vh;
-    /* border: 2px solid black; */
+
+  .detailsparaone {
+    width: 80vw;
+    font-size: 2em;
+    margin: auto;
+    font-weight: bold;
   }
-  
-  .logosdtl {
-    display: flex;
-    position: relative;
-    top: 0vh;
-    left: 15vw;
-    height: 8vh;
+
+  .detaisheadingone {
+    font-size: 5em;
   }
-  
-  .gotonavdtl {
+
+  .btngoback {
+    position: relative;
+    left: 0vw;
+    top: 5vh;
+    height: 10vh;
+    width: 60vw;
+  }
+
+  .details_first_div {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 25vw;
-    width: 40vh;
-    top: 2vh;
-    color: white;
-    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
   }
-  a {
-    color: aqua;
-    font-weight: bold;
-  }
-  
-  .logoonedtl {
-    height: 5vh;
-    position: relative;
-    left: -0.4vw;
-    top: 1vh;
-  }
-  
-  .logo {
-    height: 8vh;
-  }
-  
-  .location {
-    position: absolute;
-    left: 4.5vw;
-    top: 4vh;
-  }
-  
-  .locdtl {
-    font-weight: bold;
-    position: absolute;
-    top: 5vh;
-    left: 10vw;
-    color: whitesmoke;
-  }
-  
-  .logoonephonedtl {
-    height: 4vh;
-    position: relative;
-    right: 41vw;
-    top: -2vh;
-    /* border: 5px solid black; */
-    color: aliceblue;
-    background-color: aqua;
-  }
-  
-  .phodtl {
-    font-weight: bold;
-    position: absolute;
-    top: 13vh;
-    left: 10vw;
-  
-    color: whitesmoke;
-  }
-  
-  .logoonemaildtl {
-    height: 5vh;
-    position: relative;
-    right: 44vw;
-    top: 5vh;
-    color: red;
-  }
-  
-  .emaildtl {
-    font-weight: bold;
-    position: absolute;
-    color: whitesmoke;
-    top: 20vh;
-    left: 10vw;
-  }
-  
-  @media screen and (min-width: 375px) and (max-width: 667px) {
-    .details_wrrraper {
-      /* border: 2px solid black; */
-      width: 95%;
-      min-height: 100vh;
-      /* margin: auto; */
-      margin-top: 20px;
-      background-color: rgb(215, 230, 230);
-      border-radius: 20px;
-    }
-  
-    .details_first_div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      /* margin-top: 20px; */
-      /* justify-content: center; */
-    }
-    .underdiv_details {
-      display: flex;
-      flex-direction: column;
-      /* border: 2px solid black; */
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .price_details {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-    .btnaddcard_details {
-      width: 70vw;
-      border-radius: 20px;
-      height: 6vh;
-    }
-    .title_details {
-      font-size: 2em;
-      text-align: center;
-    }
-    .heading_details {
-      font-size: 1em;
-      font-weight: bold;
-      /* position: relative; */
-      text-align: center;
-      left: 5vw;
-      top: 10vw;
-    }
-  
-    .all_images_details {
-      height: 50vh;
-      width: 90vw;
-      margin-left: 2vw;
-      margin-top: 2vh;
-    }
-    .moredetails {
-      width: 90vw;
-      text-align: center;
-    }
-    .main {
-      flex-direction: row;
-      width: 90vw;
-      position: relative;
-      left: 5vw;
-    }
-  
-    .detailsimage {
-      height: 55vh;
-      width: 40vw;
-    }
-    .dtl {
-      width: 99vw;
-    }
-    .dtlimage {
-      height: 50vh;
-      width: 99vw;
-      border-radius: 20px;
-    }
-  
-    .detailpara {
-      width: 90vw;
-      font-weight: bold;
-      position: relative;
-      left: 4vw;
-      font-size: 1.5em;
-    }
-  
-    .detailheading {
-      text-align: center;
-    }
-    .dtltwo {
-      width: 90vw;
-    }
-  
-    .detailsthree {
-      flex-direction: column;
-      width: 99vw;
-    }
-    .detailsimage {
-      border-radius: 20px;
-      width: 90vw;
-    }
-  
-    .innerman {
-      width: 20vw;
-      height: 10vh;
-    }
-  
-    .innerman {
-      width: 80vw;
-      height: 15vh;
-    }
-    .men {
-      height: 10vh;
-      width: 15vw;
-      border-radius: 50%;
-      background-color: brown;
-      float: left;
-    }
-    .parent {
-      margin-top: 10vh;
-      width: 99vw;
-      margin-left: -15vw;
-    }
-    .balam {
-      font-weight: bold;
-      position: relative;
-      left: 1vw;
-    }
-    .read {
-      position: relative;
-      left: 1vw;
-      top: -2vh;
-    }
-    .time {
-      position: relative;
-      left: 1vw;
-      top: -2vh;
-    }
-    .logodtl {
-      height: 10vh;
-      width: 12vw;
-    }
-    .outerlogo {
-      width: 80vw;
-      float: right;
-    }
-  
-    .detailsparaone {
-      width: 85vw;
-      font-size: 1.5em;
-      overflow: hidden;
-      margin: auto;
-    }
-    .detaisheadingone {
-      font-size: 2em;
-    }
-  
-    .btngoback {
-      position: relative;
-      left: 10vw;
-      top: 5vh;
-      height: 10vh;
-      width: 80vw;
-    }
-    .footermain {
-      background-color: rgba(0, 0, 0, 0.742);
-      height: 38vh;
-      width: 100vw;
-      position: relative;
-      top: 8vh;
-    }
-  
-    .logosdtl {
-      flex-direction: column;
-      position: relative;
-      top: -10vh;
-      left: 22vw;
-      height: 8vh;
-    }
-  
-    .gotonavdtl {
-      flex-direction: column;
-      position: relative;
-      left: 15vw;
-      width: 10vh;
-      top: 1vh;
-    }
-  
-    .logoonedtl {
-      height: 4vh;
-      position: relative;
-      left: -5vw;
-      top: 1vh;
-    }
-  
-    .location {
-      position: absolute;
-      left: 5vw;
-      top: 4vh;
-    }
-  
-    .locdtl {
-      font-weight: bold;
-      position: absolute;
-      top: 5vh;
-      left: 11vw;
-      color: whitesmoke;
-      font-size: 0.8em;
-    }
-  
-    .logoonephonedtl {
-      height: 3vh;
-      position: relative;
-      right: 41vw;
-      top: -2vh;
-      color: aliceblue;
-      background-color: aqua;
-    }
-  
-    .phodtl {
-      font-weight: bold;
-      position: absolute;
-      top: 15vh;
-      left: 11vw;
-      font-size: 0.8em;
-      color: whitesmoke;
-    }
-  
-    .logoonemaildtl {
-      height: 3vh;
-      position: relative;
-      right: 49vw;
-      top: 6vh;
-    }
-  
-    .emaildtl {
-      font-weight: bold;
-      position: absolute;
-      color: whitesmoke;
-      top: 24vh;
-      font-size: 0.5em;
-      left: 11vw;
-    }
-  }
-  
-  @media screen and (min-width: 665px) and (max-width: 1000px) {
-    .details_wrrraper {
-      /* border: 2px solid black; */
-      width: 95%;
-      min-height: 100vh;
-      margin-top: 20px;
-      background-color: rgb(215, 230, 230);
-      border-radius: 20px;
-    }
-    .dtltwo {
-      width: 90vw;
-    }
-    .moredetails {
-      width: 70vw;
-      /* left: 28vw; */
-      bottom: 30vh;
-      text-align: center;
-      font-size: 1.5em;
-      /* border: 2px solid black; */
-    }
-    .title_details {
-      font-size: 2.5em;
-      text-align: center;
-    }
-    .main {
-      width: 99vw;
-    }
-    .btnaddcard_details {
-      width: 50vw;
-      border-radius: 20px;
-      height: 6vh;
-      font-size: 2em;
-    }
-    .heading_details {
-      font-size: 1.8em;
-      width: 70%;
-      font-weight: bold;
-      /* position: relative; */
-      text-align: center;
-      left: 5vw;
-      top: 10vw;
-      /* border: 2px solid black; */
-    }
-  
-    .all_images_details {
-      height: 60vh;
-      width: 80vw;
-      margin-left: 2vw;
-    }
-    .detailsimage {
-      height: 40vh;
-      width: 250vw;
-      position: relative;
-      top: 5vh;
-    }
-    .underdiv_details {
-      display: flex;
-      flex-direction: column;
-      /* border: 2px solid black; */
-      justify-content: center;
-      align-items: center;
-    }
-    .dtl {
-      border-radius: 20px;
-      width: 90vw;
-      background-image: linear-gradient(rgb(91, 224, 162), rgb(159, 158, 244));
-    }
-  
-    .dtlimage {
-      height: 50vh;
-      width: 90vw;
-      border-radius: 20px;
-    }
-    .detailpara {
-      width: 88vw;
-      font-weight: bold;
-      position: relative;
-      font-size: 2em;
-    }
-    .detailheading {
-      text-align: center;
-      font-size: 4em;
-    }
-  
-    .detailsthree {
-      flex-direction: column;
-      width: 99vw;
-    }
-  
-    .detailsimage {
-      border-radius: 20px;
-      width: 90vw;
-      height: 60vh;
-    }
-    .btngoback:hover {
-      background-color: blue;
-    }
-    .innerman {
-      width: 60vw;
-      height: 10vh;
-    }
-    .men {
-      height: 8vh;
-      width: 12vw;
-      border-radius: 50%;
-      background-color: brown;
-      float: left;
-    }
-    .parent {
-      position: relative;
-      left: 0vw;
-      width: 99vw;
-    }
-    .balam {
-      font-weight: bold;
-      position: relative;
-      left: 2vw;
-      font-size: 1.5em;
-    }
-    .read {
-      position: relative;
-      left: 1vw;
-      top: -2vh;
-    }
-    .time {
-      position: relative;
-      left: 2vw;
-      top: -2vh;
-      font-size: 1.2em;
-    }
-    .logodtl {
-      height: 10vh;
-      width: 10vw;
-    }
-    .outerlogo {
-      width: 55vw;
-      height: 10vh;
-      float: right;
-    }
-    .detailsparaone {
-      width: 80vw;
-      font-size: 2em;
-      margin: auto;
-      font-weight: bold;
-    }
-    .detaisheadingone {
-      font-size: 5em;
-    }
-  
-    .btngoback {
-      position: relative;
-      left: 0vw;
-      top: 5vh;
-      height: 10vh;
-      width: 60vw;
-    }
-    .details_first_div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      /* width: 80vw; */
-      /* border: 2px solid black; */
-      margin-top: 20px;
-      /* justify-content: center; */
-    }
-    .footermain {
-      background-color: rgba(0, 0, 0, 0.742);
-      height: 39vh;
-      width: 100vw;
-      position: relative;
-      top: 10vh;
-    }
-  
-    .logosdtl {
-      flex-direction: column;
-      position: relative;
-      top: -12vh;
-      left: 25vw;
-      height: 8vh;
-    }
-  
-    .gotonavdtl {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: 20vw;
-      width: 18vh;
-      font-size: 1.7em;
-      top: 2vh;
-    }
-  
-    .logoonedtl {
-      height: 5vh;
-      position: relative;
-      left: -5vw;
-      top: 1vh;
-    }
-  
-    .location {
-      position: absolute;
-      left: 5vw;
-      top: 4vh;
-    }
-  
-    .locdtl {
-      font-weight: bold;
-      position: absolute;
-      font-size: 1.5em;
-      top: 5.5vh;
-      left: 11vw;
-      color: whitesmoke;
-    }
-  
-    .logoonephonedtl {
-      height: 4vh;
-      position: relative;
-      right: 37vw;
-      top: -2vh;
-      color: aliceblue;
-      background-color: aqua;
-    }
-  
-    .phodtl {
-      font-size: 1.5em;
-      font-weight: bold;
-      position: absolute;
-      top: 15vh;
-      left: 11vw;
-  
-      color: whitesmoke;
-    }
-  
-    .logoonemaildtl {
-      height: 5vh;
-      position: relative;
-      right: 43.5vw;
-      top: 9vh;
-    }
-  
-    .emaildtl {
-      font-weight: bold;
-      position: absolute;
-      color: whitesmoke;
-      font-size: 1em;
-      top: 27vh;
-      left: 11vw;
-    }
-  }
+
+}
