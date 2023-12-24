@@ -49,10 +49,19 @@ function GroceriesCompo() {
                                 <NavLink to={`/details/${item.id}`}><img src={item.image} alt="Not Found" className="all_images_fashion" /></NavLink>
 
                                 <div className="underiv_fashion_two">
+                                    <h3 className="title_fashion">{item.name}</h3>
                                     <span className="price_fashion">₹:{item.price}.00</span>
 
-                                    <h3 className="title_fashion">{item.name}</h3>
-                                    <NavLink to={`/addcard/${item.id}`}><button onClick={() => dispatch(addtoCart({ id, price, image, name }))} className="btnaddcard_fashion">add to card</button></NavLink>
+
+                                    {/* <NavLink to={`/addcard/${item.id}`}><button onClick={() => dispatch(addtoCart({ id, price, image, name }))} className="btnaddcard_fashion">add to card</button></NavLink> */}
+                                    <button
+                                        className="btnaddcard_home"
+                                        onClick={() =>
+                                            dispatch(addtoCart({ id, price, image, name }))
+                                        }
+                                    >
+                                        add to cart
+                                    </button>
                                 </div>
 
 
@@ -63,7 +72,7 @@ function GroceriesCompo() {
                 })}
 
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
