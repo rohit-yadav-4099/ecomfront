@@ -30,7 +30,7 @@ const Cart = () => {
         const headers = {
             "Content-Type": "application/json",
         };
-        const response = await fetch("https://localhost:7800/api/create-checkout-session",
+        const response = await fetch("https://ecomweb-c8m3.onrender.com/api/create-checkout-session",
             {
                 method: "POST",
                 headers: headers,
