@@ -11,7 +11,7 @@ function PearCompo() {
 
     useEffect(() => {
         async function fetchapi() {
-            const ffdata = await fetch("https://ecom-sk46.onrender.com/api/getdata");
+            const ffdata = await fetch("https://ecomweb-c8m3.onrender.com/api/getdata");
             const res = await ffdata.json();
 
             setData(res);
