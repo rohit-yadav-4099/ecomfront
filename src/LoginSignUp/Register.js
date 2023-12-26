@@ -43,7 +43,7 @@ function RegisterButton() {
             alert("phoneNo. must have 10characters long");
             Navi("/register");
         } else {
-            axios.post("https://ecom-sk46.onrender.com/api/register", data)
+            axios.post("https://ecombackend-aiqz.onrender.com/api/register", data)
                 .then((res) => {
                     alert(res.data.msg);
                     setData(res.data);
