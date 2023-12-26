@@ -23,7 +23,7 @@ a {
 .cart-icon {
   display: flex;
   text-align: end;
-  margin-right: 2rem;
+  margin-right: 10rem;
   align-items: center;
   position: relative;
   justify-content: flex-end;
@@ -357,6 +357,15 @@ a {
 
   .language {
     display: none;
+  }
+
+  .cart-icon {
+    display: flex;
+    text-align: end;
+    margin-right: 1rem;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
   }
 
 
