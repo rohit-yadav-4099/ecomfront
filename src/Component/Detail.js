@@ -14,7 +14,7 @@ function DetailsCompo() {
     const newid = parseInt(id)
 
     useEffect(() => {
-        axios.get("https://ecomweb-c8m3.onrender.com/api/getdata")
+        axios.get("https://ecombackend-aiqz.onrender.com/api/getdata")
             .then((res) => setData(res.data))
             .catch((err) => {
                 console.log("error")
