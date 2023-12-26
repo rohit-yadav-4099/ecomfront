@@ -14,7 +14,7 @@ function HomeCompo() {
     const dispatch = useDispatch();
     useEffect(() => {
         async function fetchapi() {
-            const ffdata = await fetch("https://ecomweb-c8m3.onrender.com/api/getdata");
+            const ffdata = await fetch("https://ecombackend-aiqz.onrender.com/api/getdata");
             const res = await ffdata.json();
             setData(res);
         }
