@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "../Css/Search.css";
 import { useDispatch } from "react-redux";
 import { addtoCart } from "../Redux/Slice";
+import Footer from "./Footer1";
 function SearchBar() {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
@@ -14,7 +15,7 @@ function SearchBar() {
     };
 
     const handleSubmit = async () => {
-        const response = await fetch(`https://ecombackend-aiqz.onrender.com/search/${query}`);
+        const response = await fetch(`https://ecomweb-c8m3.onrender.com/search/${query}`);
         const data = await response.json();
 
         setResults(data);
@@ -75,6 +76,7 @@ function SearchBar() {
                     );
                 })}
             </div>
+            <Footer/>
         </>
     );
 }
