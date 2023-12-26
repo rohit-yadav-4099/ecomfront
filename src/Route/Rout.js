@@ -19,9 +19,6 @@ import Laptop from "../Component/Laptop";
 import Mobile from "../Component/Mobile";
 import Cancel from "../Redux/Cancel";
 
-
-
-
 function RouteCompo() {
     // const searchNavigate = useNavigate();
     // const [searchTerm, setsearchTerm] = useState("")
@@ -284,8 +281,6 @@ function RouteCompo() {
 
             </div>
 
-
-
             <Routes>
                 <Route path="/" element={<HomeCompo />}></Route>
                 <Route element={<PrivateCompo />}>
@@ -314,10 +309,7 @@ function RouteCompo() {
                 <Route path="/logout" element={<LogOut />}></Route>
                 <Route path="/cancle" element={<Cancel/>}/>
             </Routes>
-
-
             {/* </BrowserRouter> */}
-
 
         </>
     );
