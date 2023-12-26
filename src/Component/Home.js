@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { addtoCart } from "../Redux/Slice";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import Footer from "./Footer1";
+import Footer from "./Footer1";
 // import { loadStripe } from "@stripe/stripe-js";
 
 
@@ -84,7 +84,7 @@ function HomeCompo() {
 
             <div className="image_home_container">
                 {data
-                    .filter((item) => item.id % 2 === 0)
+                    .filter((item) => item.id % 2 === 1)
                     .map((item, index) => {
                         const {
                             id = item.id,
@@ -94,7 +94,7 @@ function HomeCompo() {
                             price = parseInt(item.price),
                         } = item;
                         return (
-                            <>
+                            <div>
                                 <div key={index} className="underdiv_home">
                                     <NavLink to={`/details/${item.id}`}>
                                         <img
@@ -128,14 +128,18 @@ function HomeCompo() {
                                         </button>
 
                                     </div>
-
+                                   
                                 </div>
-                            </>
+                               
+                            </div>
+                            
                         );
                     })}
-
+                     
             </div>
-
+            <div>
+                 <Footer />
+            </div>
 
 
         </>
