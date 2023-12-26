@@ -14,7 +14,7 @@ function SearchBar() {
     };
 
     const handleSubmit = async () => {
-        const response = await fetch(`https://ecomweb-c8m3.onrender.com/search/${query}`);
+        const response = await fetch(`https://ecombackend-aiqz.onrender.com/search/${query}`);
         const data = await response.json();
 
         setResults(data);
