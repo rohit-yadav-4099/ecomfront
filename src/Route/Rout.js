@@ -17,6 +17,7 @@ import Cart from "../Redux/AddtoCart";
 import Accesories from "../Component/Accesories";
 import Laptop from "../Component/Laptop";
 import Mobile from "../Component/Mobile";
+import Cancel from "../Redux/Cancel";
 
 
 
@@ -52,6 +53,7 @@ function RouteCompo() {
         localStorage.clear();
         Navi("/register");
     };
+
 
     // const handleSubmit = (e) => {
     //     e.preventDefault();
@@ -119,9 +121,11 @@ function RouteCompo() {
                 )}
 
                 <div onClick={() => setCount(!count)} className="display">
-                    <i className={`fa-solid ${count ? "fa-close" : "fa-bars"}`}></i>
+                    {/* <i className={`fa-solid ${count ? "fa-close" : "fa-bars"}`}></i> */}
+                    <img className="menupng" src="./imagepng/menu.png" alt="menu" ></img>
                 </div>
             </div>
+            
 
             <div className="routeparent">
 
@@ -135,7 +139,7 @@ function RouteCompo() {
                             Mobile
                         </NavLink>
                     </div>
-                    {isMobiledata && (
+                    {/* {isMobiledata && (
                         <ul className="sub_groceries">
                             <li>
                                 <NavLink to="/mobile/samsung">Samsung</NavLink>
@@ -144,7 +148,7 @@ function RouteCompo() {
                                 <NavLink to="/mobile/iphone">iPhone</NavLink>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li>
                     <div onDoubleClick={toggleFashionMenu} className="underdiv_all_nav">
@@ -152,7 +156,7 @@ function RouteCompo() {
                             Fashion
                         </NavLink>
                     </div>
-                    {isFashiondata && (
+                    {/* {isFashiondata && (
                         <ul className="sub_fashion">
                             <li>
                                 <NavLink to="/fashion/men">men</NavLink>
@@ -161,7 +165,7 @@ function RouteCompo() {
                                 <NavLink to="/fashion/women">women</NavLink>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li>
                     <div onDoubleClick={toggleLaptopMenu} className="underdiv_all_nav">
@@ -169,7 +173,7 @@ function RouteCompo() {
                             Laptop
                         </NavLink>
                     </div>
-                    {isLaptopData && (
+                    {/* {isLaptopData && (
                         <ul className="sub_premium">
                             <li>
                                 <NavLink to="/laptop/acer">Acer</NavLink>
@@ -178,7 +182,7 @@ function RouteCompo() {
                                 <NavLink to="/laptop/apple">Apple</NavLink>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li>
                     <div onDoubleClick={toggleAccesoriesMenu} className="underdiv_all_nav">
@@ -186,7 +190,7 @@ function RouteCompo() {
                             Accesories
                         </NavLink>
                     </div>
-                    {isAccesoriesData && (
+                    {/* {isAccesoriesData && (
                         <ul className="sub_sport">
                             <li>
                                 <NavLink to="/accesories/airdops">Airdops</NavLink>
@@ -195,7 +199,7 @@ function RouteCompo() {
                                 <NavLink to="/accesories/tv">TV</NavLink>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
 
             </div>
@@ -308,6 +312,7 @@ function RouteCompo() {
                 <Route path="/login" element={<LoginButton />}></Route>
                 <Route path="/register" element={<RegisterButton />}></Route>
                 <Route path="/logout" element={<LogOut />}></Route>
+                <Route path="/cancle" element={<Cancel/>}/>
             </Routes>
 
 
