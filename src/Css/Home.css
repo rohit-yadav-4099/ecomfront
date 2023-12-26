@@ -1,19 +1,12 @@
 .image_home_container {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 20px; */
-  height: 40vh;
-  /* width: 200px; */
-  gap: 50px;
+  gap: 40px;
   margin-top: 10px;
+  margin-bottom: 20px;
   justify-content: center;
 }
 
-/* .rohit{
-  position: absolute;
-  display: inline;
-  flex-direction: row-reverse;
-} */
 .all_images_home {
   height: 30vh;
   width: 18vw;
@@ -25,10 +18,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-
-  /* gap: 10px; */
-  /* border: 1px solid gray; */
-  /* border: 2px solid black; */
 }
 
 .underdiv_home:hover {
@@ -47,7 +36,6 @@
   transition: all;
   height: 300px;
   margin-bottom: 20px;
-  /* border: 10px solid black; */
 }
 
 .topimage_home {
@@ -78,22 +66,17 @@
   width: 80%;
   height: 40%;
   font-weight: bold;
-  /* border: 2px solid black; */
 }
 
 .home_container {
-  /* margin: auto; */
   height: 30vh;
-  /* border: 2px solid black; */
   display: flex;
   justify-content: space-around;
 }
 
 .underdiv_two_home {
-  /* border: 2px solid black; */
   box-sizing: border-box;
   overflow: hidden;
-  /* align-items: center; */
   margin: auto;
   width: 95%;
   height: 80%;
@@ -103,105 +86,6 @@
 .price_home {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-.footermain_home {
-  background-color: rgba(0, 0, 0, 0.742);
-  height: 35vh;
-  width: 100%;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  /* top: 40vh; */
-  top: 450vh;
-  /* bottom: 0; */
-}
-
-.logosdtl_home {
-  display: flex;
-  position: relative;
-  top: 0vh;
-  left: 15vw;
-  height: 8vh;
-}
-
-.gotonavdtl_home {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 25vw;
-  width: 40vh;
-  top: 2vh;
-  color: white;
-  font-size: 1em;
-}
-
-a {
-  color: aqua;
-  font-weight: bold;
-}
-
-.logoonedtl_home {
-  height: 5vh;
-  position: relative;
-  left: -0.4vw;
-  top: 1vh;
-}
-
-.logo_home {
-  height: 8vh;
-}
-
-.location_home {
-  position: absolute;
-  left: 5vw;
-  top: 4vh;
-}
-
-.locdtl_home {
-  font-weight: bold;
-  position: absolute;
-  top: 5vh;
-  left: 10vw;
-  color: whitesmoke;
-}
-
-.logoonephonedtl_home {
-  height: 4vh;
-  position: relative;
-  right: 41vw;
-  top: -2vh;
-  /* border: 5px solid black; */
-  color: aliceblue;
-  background-color: aqua;
-}
-
-.phodtl_home {
-  font-weight: bold;
-  position: absolute;
-  top: 13vh;
-  left: 10vw;
-
-  color: whitesmoke;
-}
-
-.logoonemaildtl_home {
-  height: 5vh;
-  position: relative;
-  right: 44vw;
-  top: 5vh;
-  color: red;
-}
-
-.emaildtl_home {
-  font-weight: bold;
-  position: absolute;
-  color: whitesmoke;
-  top: 20vh;
-  left: 10vw;
 }
 
 /* ********************************************media********************************* */
@@ -259,81 +143,7 @@ a {
     height: 70%;
   }
 
-  .footermain_home {
-    top: 10vh;
-  }
-
-  .logosdtl_home {
-    flex-direction: column;
-    position: relative;
-    top: -10vh;
-    left: 22vw;
-    height: 8vh;
-  }
-
-  .gotonavdtl_home {
-    flex-direction: column;
-    position: relative;
-    left: 15vw;
-    width: 10vh;
-    top: 1vh;
-  }
-
-  .logoonedtl_home {
-    height: 4vh;
-    position: relative;
-    left: -5vw;
-    top: 1vh;
-  }
-
-  .location_home {
-    position: absolute;
-    left: 5vw;
-    top: 4vh;
-  }
-
-  .locdtl_home {
-    font-weight: bold;
-    position: absolute;
-    top: 5vh;
-    left: 11vw;
-    color: whitesmoke;
-    font-size: 0.8em;
-  }
-
-  .logoonephonedtl_home {
-    height: 3vh;
-    position: relative;
-    right: 41vw;
-    top: -2vh;
-    color: aliceblue;
-    background-color: aqua;
-  }
-
-  .phodtl_home {
-    font-weight: bold;
-    position: absolute;
-    top: 14vh;
-    left: 11vw;
-    font-size: 0.8em;
-    color: whitesmoke;
-  }
-
-  .logoonemaildtl_home {
-    height: 3vh;
-    position: relative;
-    right: 49vw;
-    top: 6vh;
-  }
-
-  .emaildtl_home {
-    font-weight: bold;
-    position: absolute;
-    color: whitesmoke;
-    top: 22vh;
-    font-size: 0.5em;
-    left: 11vw;
-  }
+  
 }
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
@@ -369,97 +179,9 @@ a {
   .btnaddcard_home:hover {
     background-color: rgb(102, 201, 237);
   }
-
+  
   .price_home {
     font-size: 1.5em;
     font-weight: bold;
-  }
-
-  .footermain_home {
-    background-color: rgba(0, 0, 0, 0.742);
-    height: 36vh;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-
-    top: 1250vh;
-  }
-
-  .logosdtl_home {
-    flex-direction: column;
-    position: relative;
-    top: -12vh;
-    left: 25vw;
-    height: 8vh;
-  }
-
-  .gotonavdtl_home {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 20vw;
-    width: 18vh;
-    font-size: 1.7em;
-    top: 2vh;
-  }
-
-  .logoonedtl_home {
-    height: 5vh;
-    position: relative;
-    left: -5vw;
-    top: 1vh;
-  }
-
-  .location_home {
-    position: absolute;
-    left: 5vw;
-    top: 4vh;
-  }
-
-  .locdtl_home {
-    font-weight: bold;
-    position: absolute;
-    font-size: 1.5em;
-    top: 5.5vh;
-    left: 11vw;
-    color: whitesmoke;
-  }
-
-  .logoonephonedtl_home {
-    height: 4vh;
-    position: relative;
-    right: 37vw;
-    top: -2vh;
-    color: aliceblue;
-    background-color: aqua;
-  }
-
-  .phodtl_home {
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    top: 15vh;
-    left: 11vw;
-
-    color: whitesmoke;
-  }
-
-  .logoonemaildtl_home {
-    height: 5vh;
-    position: relative;
-    right: 43.5vw;
-    top: 9vh;
-  }
-
-  .emaildtl_home {
-    font-weight: bold;
-    position: absolute;
-    color: whitesmoke;
-    font-size: 1em;
-    top: 25vh;
-    left: 11vw;
   }
 }
