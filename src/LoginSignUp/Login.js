@@ -24,7 +24,7 @@ function LoginButton() {
     const handle = (e) => {
 
         e.preventDefault()
-        axios.post("https://ecomweb-c8m3.onrender.com/api/login", user, { headers: { "authorization": `Bearer${token}` } })
+        axios.post("https://ecombackend-aiqz.onrender.com/api/login", user, { headers: { "authorization": `Bearer${token}` } })
             .then((res) => {
                 console.log(res)
                 alert(res.data.msg)
