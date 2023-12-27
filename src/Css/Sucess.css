@@ -11,6 +11,7 @@
   border-radius: 10px;
   background-color: rgb(248, 255, 47);
   margin-top: 20vh;
+  border: 2px solid #197373;
 }
 
 .gobackpayment_div {
@@ -33,4 +34,37 @@
   background-color: yellow;
   color: black;
   border: none;
+}
+
+.paymentpage{
+  margin-bottom: 20vh;
+}
+
+@media screen and (min-width:300px) and (max-width:500px){
+  .gobackpayment {
+    width: 53vw;
+    height: 7vh;
+    color: white;
+    margin-top: 14px;
+  }
+
+  .sucesss {
+    height: 50px;
+    width: 53vw;
+    display: flex;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:1000px){
+  .gobackpayment {
+    width: 42vw;
+    height: 6vh;
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+
+  .paymentpage{
+    margin-bottom: 26vh;
+  }
 }
