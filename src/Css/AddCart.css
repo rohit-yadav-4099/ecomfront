@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .total {
@@ -9,10 +10,11 @@
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   width: 50vw;
-  height: 10vh;
+  height: 20vh;
   text-align: right;
   position: relative;
 }
+
 
 .remove-cart {
   height: 5vh;
@@ -109,7 +111,7 @@ background-color: rgb(231, 47, 6);
   background-color: rgb(87, 91, 91);
   height: 8vh;
   width: 10vw;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .gobackcart {
@@ -128,9 +130,14 @@ background-color: rgb(231, 47, 6);
     font-size: 1.5em;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
-    width: 60vw;
-    height: 10vh;
+    width: 70vw;
+    height: 15vh;
     text-align: center;
+  }
+
+  .totalprice{
+    width: 40vh;
+    color: red;
   }
 
   .remove-cart {
@@ -157,12 +164,12 @@ background-color: rgb(231, 47, 6);
   .buy {
     margin-top: 5vh;
     text-align: center;
-    right: 40vw;
+    right: 45vw;
     width: 10vw;
   }
 
   .buybtn {
-    height: 5vh;
+    height: 6vh;
     width: 40vw;
   }
 
@@ -172,7 +179,6 @@ background-color: rgb(231, 47, 6);
 
   .btncontainer {
     text-align: center;
-
     margin-top: 10px;
   }
 
@@ -214,9 +220,9 @@ background-color: rgb(231, 47, 6);
   }
 
   .gobackaddcart {
-    margin-top: 20px;
-    width: 50vw;
-    height: 8vh;
+    margin-top: 15px;
+    width: 45vw;
+    height: 7vh;
   }
 }
 
@@ -255,11 +261,13 @@ background-color: rgb(231, 47, 6);
 
   .cartprice {
     text-align: center;
+    /* width: 20%; */
   }
 
   .buy {
     margin-top: 5vh;
     text-align: center;
+    /* border: 2px solid black; */
     width: 10vw;
   }
 
