@@ -60,8 +60,17 @@ function SearchBar() {
                                 <div className="details_data">
                                     <h1>{item.name}</h1>
                                     <h1>₹:{item.price}.00</h1>
-                                    <NavLink to={`/addcard/${item.id}`}>
-                                        <button
+                                    // <NavLink to={`/addcard/${item.id}`}>
+                                    //     <button
+                                    //         onClick={() =>
+                                    //             dispatch(addtoCart({ id, price, image, name }))
+                                    //         }
+                                    //         className="btnaddcard_fashion"
+                                    //     >
+                                    //         add to card
+                                    //     </button>
+                                    // </NavLink>
+                                                 <button
                                             onClick={() =>
                                                 dispatch(addtoCart({ id, price, image, name }))
                                             }
@@ -69,7 +78,6 @@ function SearchBar() {
                                         >
                                             add to card
                                         </button>
-                                    </NavLink>
                                 </div>
                             </div>
                         </>
