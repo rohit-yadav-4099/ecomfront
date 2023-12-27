@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .total {
@@ -132,7 +131,6 @@ background-color: rgb(231, 47, 6);
     width: 60vw;
     height: 10vh;
     text-align: center;
-    /* border: 2px solid black; */
   }
 
   .remove-cart {
@@ -257,13 +255,11 @@ background-color: rgb(231, 47, 6);
 
   .cartprice {
     text-align: center;
-    /* width: 20%; */
   }
 
   .buy {
     margin-top: 5vh;
     text-align: center;
-    /* border: 2px solid black; */
     width: 10vw;
   }
 
