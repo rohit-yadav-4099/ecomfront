@@ -1,10 +1,9 @@
-import { NavLink, useNavigate, useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import '../Css/Rout.css'
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addtoCart } from "../Redux/Slice";
-import Footer from "./Footer1";
 
 function DetailsCompo() {
     const [data, setData] = useState([])
@@ -54,8 +53,6 @@ function DetailsCompo() {
 
                 <button onClick={() => Navi(-1)} className="goback">Go Back</button>
             </div>
-
-            <Footer />
         </>
     )
 }
