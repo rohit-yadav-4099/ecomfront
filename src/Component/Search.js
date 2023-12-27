@@ -70,7 +70,7 @@ function SearchBar() {
                                     //         add to card
                                     //     </button>
                                     // </NavLink>
-                                                 <button
+                                        <button
                                             onClick={() =>
                                                 dispatch(addtoCart({ id, price, image, name }))
                                             }
