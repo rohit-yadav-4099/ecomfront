@@ -2,9 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "../Css/AddCart.css";
 import { RemoveItem, IncreaseQuantity, DecreaseQuantity } from "../Redux/Slice";
-import { useNavigate } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
-import Footer from "../Component/Footer1";
+import { NavLink, useNavigate } from "react-router-dom";
+// import { loadStripe } from "@stripe/stripe-js";
 
 const Cart = () => {
     const Navi = useNavigate();
@@ -22,28 +21,28 @@ const Cart = () => {
 
     // payment integrate...
 
-    const handleBuy = async () => {
-        const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
-        const body = {
-            products: data,
-        };
-        const headers = {
-            "Content-Type": "application/json",
-        };
-        const response = await fetch("https://ecombackend-aiqz.onrender.com/api/create-checkout-session",
-            {
-                method: "POST",
-                headers: headers,
-                body: JSON.stringify(body),
-            });
-        const session = await response.json();
-        const result = stripe.redirectToCheckout({
-            sessionId: session.id,
-        });
-        if (result.error) {
-            console.log(result.error);
-        }
-    };
+    // const handleBuy = async () => {
+    //     const stripe = await loadStripe("pk_test_51OQ699SDqC8mEPn5Q8XJZPCPbWDs3QdmS0iRgQP6uGNG3AHBgIIRiBrDhW6gB1QHC3C9GnJdLF7jW4sgEDA8zTJH00W163lIIE");
+    //     const body = {
+    //         products: data,
+    //     };
+    //     const headers = {
+    //         "Content-Type": "application/json",
+    //     };
+    //     const response = await fetch("https://ecombackend-aiqz.onrender.com/api/create-checkout-session",
+    //         {
+    //             method: "POST",
+    //             headers: headers,
+    //             body: JSON.stringify(body),
+    //         });
+    //     const session = await response.json();
+    //     const result = stripe.redirectToCheckout({
+    //         sessionId: session.id,
+    //     });
+    //     if (result.error) {
+    //         console.log(result.error);
+    //     }
+    // };
     return (
         <>
             <div className="container">
@@ -95,12 +94,19 @@ const Cart = () => {
                     })}
 
                 <div className="total">
-                    <span>Total : </span>
-                    <span style={{ color: "blue" }}>{total}.00</span>
+                    <div className="totalprice">
+                        <span>Total : </span>
+                        <span style={{ color: "blue" }}>{total}.00</span>
+                    </div>
                     <div className="buy">
-                        <button className="buybtn" onClick={handleBuy}>
+                        <NavLink to="/success">
+                        {/* <button className="buybtn" onClick={handleBuy}>
+                            Buy Now
+                        </button> */}
+                        <button className="buybtn">
                             Buy Now
                         </button>
+                        </NavLink>
                     </div>
                 </div>
 
@@ -110,8 +116,7 @@ const Cart = () => {
                 <button className="gobackaddcart" onClick={() => Navi(-1)}>
                     Go Back
                 </button>
-            </div><br/><br/><br/>
-            <Footer/>
+            </div><br /><br /><br />
         </>
     );
 };
