@@ -3,7 +3,7 @@ import '../Css/Fashion.css'
 import { NavLink } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addtoCart } from "../Redux/Slice"
-import Footer from "./Footer1"
+
 function GroceriesCompo() {
     const [data, setData] = useState([])
     const dispatch = useDispatch()
@@ -72,7 +72,6 @@ function GroceriesCompo() {
                 })}
 
             </div>
-            <Footer />
         </>
     )
 }
