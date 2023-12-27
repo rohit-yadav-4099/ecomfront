@@ -18,6 +18,11 @@ import Accesories from "../Component/Accesories";
 import Laptop from "../Component/Laptop";
 import Mobile from "../Component/Mobile";
 import Cancel from "../Redux/Cancel";
+import Footer from "../Component/Footer1";
+import Success from "../Redux/Sucess";
+
+
+
 
 function RouteCompo() {
     // const searchNavigate = useNavigate();
@@ -118,7 +123,6 @@ function RouteCompo() {
                 )}
 
                 <div onClick={() => setCount(!count)} className="display">
-                    {/* <i className={`fa-solid ${count ? "fa-close" : "fa-bars"}`}></i> */}
                     <img className="menupng" src="./imagepng/menu.png" alt="menu" ></img>
                 </div>
             </div>
@@ -281,6 +285,8 @@ function RouteCompo() {
 
             </div>
 
+
+
             <Routes>
                 <Route path="/" element={<HomeCompo />}></Route>
                 <Route element={<PrivateCompo />}>
@@ -302,6 +308,7 @@ function RouteCompo() {
                     <Route path="/addcard/:id" element={<Cart />}></Route>
                     <Route path="/details/:id" element={<DetailsCompo />}></Route>
                     <Route path="/search" element={<SearchBar />}></Route>
+                    <Route path="/success" element={<Success/>}></Route>
                 </Route>
 
                 <Route path="/login" element={<LoginButton />}></Route>
@@ -309,8 +316,11 @@ function RouteCompo() {
                 <Route path="/logout" element={<LogOut />}></Route>
                 <Route path="/cancle" element={<Cancel/>}/>
             </Routes>
-            {/* </BrowserRouter> */}
 
+
+            {/* </BrowserRouter> */}
+          
+                <Footer/>
         </>
     );
 }
