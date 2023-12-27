@@ -3,7 +3,6 @@ import '../Css/Mobile.css'
 import { NavLink } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addtoCart } from "../Redux/Slice"
-import Footer from "./Footer1"
 
 function Mobile() {
     const [data, setData] = useState([])
@@ -65,8 +64,6 @@ function Mobile() {
 
 
             </div>
-
-            <Footer />
         </>
     )
 }
