@@ -3,7 +3,6 @@ import '../Css/Accesories.css'
 import { NavLink } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addtoCart } from "../Redux/Slice"
-import Footer from "./Footer1"
 
 function Accesories() {
     const [data, setData] = useState([])
@@ -20,15 +19,6 @@ function Accesories() {
     })
     return (
         <>
-            {/* <div className="sport_container">
-                {data.filter((item) => item.id === 48).map((item, index) => {
-                    return (
-                        <div key={index} className="underdiv_two_sport">
-                            <img src={item.images} alt="Not Found" className="topimage_sport" />
-                        </div>
-                    )
-                })}
-            </div> */}
             <div className="image_sport_container">
                 {data.filter((item) => item.category === "Accesories").map((item, index) => {
                     const {
@@ -64,8 +54,7 @@ function Accesories() {
                 })}
 
             </div>
-            <Footer />
-
+          
         </>
     )
 }
