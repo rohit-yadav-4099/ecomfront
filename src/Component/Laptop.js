@@ -3,7 +3,6 @@ import '../Css/Laptop.css'
 import { NavLink } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addtoCart } from "../Redux/Slice"
-import Footer from "./Footer1"
 
 function Laptop() {
     const [data, setData] = useState([])
@@ -18,15 +17,6 @@ function Laptop() {
     })
     return (
         <>
-            {/* <div className="premium_container">
-                {data.filter((item) => item.id === 32).map((item, index) => {
-                    return (
-                        <div key={index} className="underdiv_two_premium">
-                            <img src={item.images} alt="Not Found" className="topimage_premium" />
-                        </div>
-                    )
-                })}
-            </div> */}
             <div className="image_premium_container">
                 {data.filter((item) => item.category === "laptop").map((item, index) => {
                     const {
@@ -42,8 +32,6 @@ function Laptop() {
                                 <div className="underdiv_premium_two">
                                     <span>{item.name}laptop</span>
                                     <span className="price_premium">₹:{item.price}.00</span>
-                                    {/* <h2 className="title_premium">{item.title}</h2> */}
-                                    {/* <NavLink to={`/addcard/${item.id}`}>  <button onClick={() => dispatch(addtoCart({ id, price, image, title }))} className="btnaddcard_premium">add to cart</button></NavLink> */}
                                     <button
                                         className="btnaddcard_home"
                                         onClick={() =>
@@ -58,7 +46,6 @@ function Laptop() {
                     )
                 })}
             </div>
-            <Footer />
         </>
     )
 }
