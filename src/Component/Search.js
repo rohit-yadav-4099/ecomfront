@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Css/Search.css";
 import { useDispatch } from "react-redux";
 import { addtoCart } from "../Redux/Slice";
-import Footer from "./Footer1";
+
 function SearchBar() {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState([]);
@@ -15,7 +15,7 @@ function SearchBar() {
     };
 
     const handleSubmit = async () => {
-        const response = await fetch(`https://ecomweb-c8m3.onrender.com/search/${query}`);
+        const response = await fetch(`https://ecombackend-aiqz.onrender.com/search/${query}`);
         const data = await response.json();
 
         setResults(data);
@@ -60,17 +60,17 @@ function SearchBar() {
                                 <div className="details_data">
                                     <h1>{item.name}</h1>
                                     <h1>₹:{item.price}.00</h1>
-                                    // <NavLink to={`/addcard/${item.id}`}>
-                                    //     <button
-                                    //         onClick={() =>
-                                    //             dispatch(addtoCart({ id, price, image, name }))
-                                    //         }
-                                    //         className="btnaddcard_fashion"
-                                    //     >
-                                    //         add to card
-                                    //     </button>
-                                    // </NavLink>
+                                    {/* <NavLink to={`/addcard/${item.id}`}>
                                         <button
+                                            onClick={() =>
+                                                dispatch(addtoCart({ id, price, image, name }))
+                                            }
+                                            className="btnaddcard_fashion"
+                                        >
+                                            add to card
+                                        </button>
+                                    </NavLink> */}
+                                    <button
                                             onClick={() =>
                                                 dispatch(addtoCart({ id, price, image, name }))
                                             }
@@ -84,7 +84,6 @@ function SearchBar() {
                     );
                 })}
             </div>
-            <Footer/>
         </>
     );
 }
