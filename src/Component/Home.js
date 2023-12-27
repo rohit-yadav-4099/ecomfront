@@ -5,8 +5,7 @@ import { useDispatch } from "react-redux";
 import { addtoCart } from "../Redux/Slice";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Footer from "./Footer1";
-// import { loadStripe } from "@stripe/stripe-js";
+
 
 
 function HomeCompo() {
@@ -137,11 +136,6 @@ function HomeCompo() {
                     })}
                      
             </div>
-            <div>
-                 <Footer />
-            </div>
-
-
         </>
 
     );
