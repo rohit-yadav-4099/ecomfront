@@ -17,8 +17,14 @@
 
 .remove-cart {
   height: 5vh;
-  width: 10vw;
+  width: 8vw;
+  font-weight: bold;
   border-radius: 5px;
+  background-color: yellow;
+}
+
+.remove-cart:hover{
+background-color: rgb(231, 47, 6);
 }
 
 .cart-subcontent {
@@ -33,7 +39,6 @@
 .buy {
   margin-top: 5vh;
   text-align: center;
-  /* border: 2px solid black; */
   width: 10vw;
   position: absolute;
   right: 15px;
@@ -54,6 +59,7 @@
   background-color: yellow;
   color: black;
   border: none;
+  border: 2px solid #197373;
 }
 
 .addsubbtn {
@@ -130,9 +136,15 @@
   }
 
   .remove-cart {
-    height: 7vh;
-    width: 50vw;
-    /* border: 2px solid black; */
+    height: 5vh;
+    width: 33vw;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: yellow;
+  }
+  
+  .remove-cart:hover{
+  background-color: rgb(231, 47, 6);
   }
 
   .cart-subcontent {
@@ -167,10 +179,9 @@
   }
 
   .image {
-    height: 40vh;
+    height: 30vh;
     width: 75vw;
     border-radius: 15px;
-    border: 1px solid black;
   }
 
   .image:hover {
@@ -182,13 +193,11 @@
   }
 
   .cart_details {
-    border: 1px solid gray;
     display: flex;
     border-radius: 15px;
     flex-direction: row;
-    height: 50vh;
+    height:40vh;
     width: 75vw;
-    background-color: rgba(192, 233, 247, 0.603);
     justify-content: center;
   }
 
@@ -200,7 +209,6 @@
 
   .container {
     display: flex;
-
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
@@ -228,13 +236,18 @@
     width: 70vw;
     height: 10vh;
     text-align: center;
-    /* border: 2px solid black; */
   }
 
   .remove-cart {
     height: 5vh;
-    width: 25vw;
-    /* border: 2px solid black; */
+    width: 18vw;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: yellow;
+  }
+  
+  .remove-cart:hover{
+  background-color: rgb(231, 47, 6);
   }
 
   .cart-subcontent {
@@ -271,10 +284,8 @@
   }
 
   .image {
-    height: 40vh;
+    height: 30vh;
     width: 45vw;
-    border-radius: 15px;
-    border: 1px solid black;
   }
 
   .image:hover {
@@ -286,13 +297,11 @@
   }
 
   .cart_details {
-    border: 1px solid gray;
     display: flex;
     border-radius: 15px;
     flex-direction: row;
-    height: 50vh;
+    height: 40vh;
     width: 45vw;
-    background-color: rgba(192, 233, 247, 0.603);
     justify-content: center;
     align-items: center;
   }
@@ -301,12 +310,10 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
-    border: 2px solid black;
   }
 
   .container {
     display: flex;
-    /* border: 2px solid black; */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
@@ -314,7 +321,7 @@
   }
 
   .gobackaddcart {
-    background-color: rgb(111, 235, 235);
+    background-color: rgb(15, 105, 105);
     height: 8vh;
     width: 25vw;
     border-radius: 20px;
