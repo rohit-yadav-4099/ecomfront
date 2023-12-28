@@ -10,8 +10,16 @@
   margin: auto;
   border-radius: 10px;
   background-color: rgb(248, 255, 47);
-  margin-top: 20vh;
+  margin-top: 35vh;
   border: 2px solid #197373;
+}
+
+.sucessgif {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 .gobackpayment_div {
@@ -36,11 +44,11 @@
   border: none;
 }
 
-.paymentpage{
-  margin-bottom: 20vh;
+.paymentpage {
+  margin-bottom: 10vh;
 }
 
-@media screen and (min-width:300px) and (max-width:500px){
+@media screen and (min-width:300px) and (max-width:500px) {
   .gobackpayment {
     width: 53vw;
     height: 7vh;
@@ -54,9 +62,21 @@
     display: flex;
     font-size: 1.2em;
   }
+
+  .sucessgif {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  .paymentpage {
+    margin-bottom: 5vh;
+  }
 }
 
-@media screen and (min-width:500px) and (max-width:1000px){
+@media screen and (min-width:500px) and (max-width:1000px) {
   .gobackpayment {
     width: 42vw;
     height: 6vh;
@@ -64,7 +84,7 @@
     margin-top: 12px;
   }
 
-  .paymentpage{
-    margin-bottom: 26vh;
+  .paymentpage {
+    margin-bottom: 11vh;
   }
 }
