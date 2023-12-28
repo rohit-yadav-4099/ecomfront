@@ -1,23 +1,30 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "../Css/AddCart.css";
-import { RemoveItem, IncreaseQuantity, DecreaseQuantity } from "../Redux/Slice";
+import { RemoveItem, IncreaseQuantity, DecreaseQuantity, clearCart } from "../Redux/Slice";
 import { NavLink, useNavigate } from "react-router-dom";
-// import { loadStripe } from "@stripe/stripe-js";
+
 
 const Cart = () => {
+    const countItem = useSelector((state) => state.Cart.cart);
     const Navi = useNavigate();
     const dispatch = useDispatch();
     const data = useSelector((state) => state.Cart.cart);
     const total = data.reduce((acc, item) => {
         return acc + item.price * item.quantity;
     }, 0);
+
     const handleIncreaseQuantity = (id) => {
         dispatch(IncreaseQuantity({ id }));
     };
+
     const handleDecreaseQuantity = (id) => {
         dispatch(DecreaseQuantity({ id }));
     };
+
+    const handleclearCart = () => {
+        dispatch(clearCart())
+    }
 
     // payment integrate...
 
@@ -45,6 +52,7 @@ const Cart = () => {
     // };
     return (
         <>
+            <h4 className="count_item">You have <span>{countItem.length} item in Cart</span></h4>
             <div className="container">
                 {data &&
                     data.map((item, index) => {
@@ -59,9 +67,7 @@ const Cart = () => {
                                         <span>{item.subCategory}</span>
                                         <h3 className="cartprice">
                                             {"Rs " + item.price * item.quantity}.00
-
                                         </h3>
-
                                         <div className="addsubbtn">
                                             <button
                                                 className="quantity-btn"
@@ -77,7 +83,6 @@ const Cart = () => {
                                             </button>
                                         </div>
                                         <div className="btncontainer">
-
                                             <span className="cart-subcontent">
                                                 <h2>{item.model}</h2>
                                                 <button
@@ -99,19 +104,20 @@ const Cart = () => {
                         <span style={{ color: "blue" }}>{total}.00</span>
                     </div>
                     <div className="buy">
+                        <button className="clrbtn" onClick={handleclearCart}>
+                            Clear cart
+                        </button>
                         <NavLink to="/success">
-                        {/* <button className="buybtn" onClick={handleBuy}>
+                            {/* <button className="buybtn" onClick={handleBuy}>
                             Buy Now
                         </button> */}
-                        <button className="buybtn">
-                            Buy Now
-                        </button>
+                            <button className="buybtn" onClick={handleclearCart}>
+                                Buy Now
+                            </button>
                         </NavLink>
                     </div>
                 </div>
-
             </div>
-
             <div className="gobackcart">
                 <button className="gobackaddcart" onClick={() => Navi(-1)}>
                     Go Back
