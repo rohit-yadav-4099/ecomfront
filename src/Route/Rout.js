@@ -25,8 +25,7 @@ import Success from "../Redux/Sucess";
 
 
 function RouteCompo() {
-    // const searchNavigate = useNavigate();
-    // const [searchTerm, setsearchTerm] = useState("")
+
     const [count, setCount] = useState(false);
     const Navi = useNavigate();
     const auth = localStorage.getItem("token");
@@ -56,11 +55,6 @@ function RouteCompo() {
         Navi("/register");
     };
 
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     searchNavigate(`/search/${searchTerm}`)
-    // }
 
     return (
         <>
@@ -126,7 +120,7 @@ function RouteCompo() {
                     <img className="menupng" src="./imagepng/menu.png" alt="menu" ></img>
                 </div>
             </div>
-            
+
 
             <div className="routeparent">
 
@@ -205,7 +199,6 @@ function RouteCompo() {
 
             </div>
 
-
             <div className={count ? "hambergerlinksShows" : "hambergerlinksHide"}>
                 <ul className="navbar-listResponsive">
                     <li className="listres">
@@ -282,10 +275,7 @@ function RouteCompo() {
                         </NavLink>
                     </li>
                 </ul>
-
             </div>
-
-
 
             <Routes>
                 <Route path="/" element={<HomeCompo />}></Route>
@@ -308,19 +298,18 @@ function RouteCompo() {
                     <Route path="/addcard/:id" element={<Cart />}></Route>
                     <Route path="/details/:id" element={<DetailsCompo />}></Route>
                     <Route path="/search" element={<SearchBar />}></Route>
-                    <Route path="/success" element={<Success/>}></Route>
+                    <Route path="/success" element={<Success />}></Route>
                 </Route>
 
                 <Route path="/login" element={<LoginButton />}></Route>
                 <Route path="/register" element={<RegisterButton />}></Route>
                 <Route path="/logout" element={<LogOut />}></Route>
-                <Route path="/cancle" element={<Cancel/>}/>
+                <Route path="/cancle" element={<Cancel />} />
             </Routes>
 
-
             {/* </BrowserRouter> */}
-          
-                <Footer/>
+
+            <Footer />
         </>
     );
 }
