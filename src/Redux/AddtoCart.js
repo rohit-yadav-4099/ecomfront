@@ -107,14 +107,18 @@ const Cart = () => {
                         <button className="clrbtn" onClick={handleclearCart}>
                             Clear cart
                         </button>
-                        <NavLink to="/success">
-                            {/* <button className="buybtn" onClick={handleBuy}>
+                        {countItem.length === 0 ? (
+                            <button className="emptyCart" disabled>Cart is empty</button>
+                        ) : (
+                            <NavLink to="/success">
+                                {/* <button className="buybtn" onClick={handleBuy}>
                             Buy Now
                         </button> */}
-                            <button className="buybtn" onClick={handleclearCart}>
-                                Buy Now
-                            </button>
-                        </NavLink>
+                                <button className="buybtn" onClick={handleclearCart}>
+                                    Buy Now
+                                </button>
+                            </NavLink>
+                        )}
                     </div>
                 </div>
             </div>
